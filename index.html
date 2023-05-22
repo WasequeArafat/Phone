@@ -14,7 +14,7 @@
 
   <body>
     <header>
-      <h1>Welcome to my Phone Hunter!</h1>
+      <h1 class="mb-3">Welcome to my Phone Hunter!</h1>
     </header>
     <main class="container">
       <section>
@@ -22,11 +22,11 @@
           <input
             id="search-field"
             type="email"
-            class="form-control"
+            class="form-control mb-3"
             id="exampleFormControlInput1"
             placeholder="search your phone"
           />
-          <div id="btn-search" class="btn btn-primary">Search</div>
+          <div id="btn-search" class="btn btn-warning">Search</div>
         </div>
       </section>
       <!-- loader -->
@@ -56,18 +56,20 @@
 
       <!-- modal contents -->
       <section>
+        <!-- Button trigger modal -->
+
         <!-- Modal -->
         <div
-          class="modal text-white fade"
-          id="phoneDetailModal"
+          class="modal fade"
+          id="exampleModal"
           tabindex="-1"
-          aria-labelledby="phoneDetailModalLabel"
+          aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                 <button
                   type="button"
                   class="btn-close"
@@ -75,11 +77,11 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div id="phone-details" class="modal-body"></div>
+              <div id="body" class="modal-body">...</div>
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  class="btn btn-success"
                   data-bs-dismiss="modal"
                 >
                   Close
